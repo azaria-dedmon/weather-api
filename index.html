@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+  <title>API</title>
+</head>
+<body>
+    <div class='main'>
+        <form>
+            <label for='city'>City:</label>
+            <div class='city-box'>
+                <input type='text' placeholder='Please enter a city' id='city' name='city' require>
+            </div>     
+            <button type='submit'>SUBMIT</button><br>
+            <button type='reset' id='reset'>reset</button>
+            <h4>Hint: try los angeles, seattle, or atlanta</h4>
+        </form>   
+    </div>
+    
+    <div class='error'></div>
+
+    <div class='weather'>
+        <h1 class='cityName'></h1>
+        <h4 class='celsius'></h4>
+        <h4 class='fahrenheit'></h4>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
